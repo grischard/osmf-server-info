@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>yevaud.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="yevaudopenstreetmaporg">yevaud.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd>Tyan S7010</dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 6 core <a href="http://ark.intel.com/products/47921">Intel(R) Xeon(R) CPU X5660 @ 2.80GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>94GB Total</li>
+      <li>12 x 8GB 1066 MHz Other DIMM</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Areca ARC-1220 8-Port PCI-Express to SATA RAID Controller</li>
+      <li>Intel 82801JI (ICH10 Family) SATA AHCI Controller</li>
+      <li><a href="http://www.avagotech.com/products/server-storage/io-controllers/sas-3008">LSI SAS3008 PCI-Express Fusion-MPT SAS-3</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 2TB <a href="http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-771444.pdf">Western Digital WD2000FYYZ</a></li>
+      <li>2 x 1TB <a href="http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-701284.pdf">Western Digital WD1000DHTZ</a></li>
+      <li>1 x 1TB Samsung SSD 850</li>
+      <li>1 x 300GB Western Digital WD3000HLHX</li>
+      <li>3 x 300GB Western Digital WD3000HLFS</li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82574L Gigabit Network Connection</li>
+      <li>Intel 82574L Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C0:91:07</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C0:91:06</li>
+      <li>128.40.45.208</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version ‘V3.03        ‘</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>yevaud</strong></dt>
+  <dd>Master role applied to yevaud</dd>
+  <dt><strong>ucl-wolfson</strong></dt>
+  <dd>Role applied to all servers at UCL which are in Wolfson House</dd>
+  <dt><strong>ucl</strong></dt>
+  <dd>Role applied to all servers at UCL</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>tyan-s7010</strong></dt>
+  <dd>Role applied to machines using the Tyan S710 motherboard</dd>
+  <dt><strong>tile</strong></dt>
+  <dd>Role applied to all tile servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>2TB RAID1+0 array over 2 disks</dd>
+  <dt><strong>/dev/sdb</strong></dt>
+  <dd>600GB RAID1+0 array over 4 disks</dd>
+  <dt><strong>/dev/sdc</strong></dt>
+  <dd>1TB RAID1+0 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>2TB ext4 on /dev/sda1</dd>
+  <dt><strong>/store/database</strong></dt>
+  <dd>939GB ext4 on /dev/sdd1</dd>
+  <dt><strong>/store/tiles/default-high</strong></dt>
+  <dd>931GB xfs on /dev/sdc1</dd>
+  <dt><strong>/store/tiles/default-low</strong></dt>
+  <dd>550GB ext4 on /dev/sdb1</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

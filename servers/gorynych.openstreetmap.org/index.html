@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>gorynych.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="gorynychopenstreetmaporg">gorynych.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd><a href="https://www.asus.com/Commercial-Servers-Workstations/Z8NRD12/">ASUS Z8NR-D12</a></dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 4 core <a href="http://ark.intel.com/products/37103">Intel(R) Xeon(R) CPU E5530 @ 2.40GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>31GB Total</li>
+      <li>2 x 8GB 1333 MHz DDR3 DIMM</li>
+      <li>4 x 4GB 1067 MHz DDR3 DIMM</li>
+      <li>6 x Spare DIMM slot</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82801JI (ICH10 Family) SATA AHCI Controller</li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>1 x 500GB <a href="http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-701338.pdf">Western Digital WD5003ABYX</a></li>
+      <li>1 x 500GB <a href="http://www.wdc.com/en/library/spec/2879-701281.pdf">Western Digital WD5002ABYS</a></li>
+      <li>2 x 250GB <a href="http://www.seagate.com/files/www-content/product-content/pulsar-fam/pulsar/enterprise-sata-ssd/en-us/docs/enterprise-sata-ssd-ds1775-1-1301us.pdf">Seagate ST240FN0021</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82574L Gigabit Network Connection</li>
+      <li>Intel 82574L Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>90:E6:BA:69:3D:AB</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>90:E6:BA:69:3C:A1</li>
+      <li>130.193.62.73</li>
+      <li>2a02:6b8:b010:5065::a001</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version 1403</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>gorynych</strong></dt>
+  <dd>Master role applied to gorynych</dd>
+  <dt><strong>yandex</strong></dt>
+  <dd>Role applied to all servers at Yandex</dd>
+  <dt><strong>ru</strong></dt>
+  <dd>Role applied to all servers located in Russia</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>tilecache</strong></dt>
+  <dd>Role applied to all tile cache servers</dd>
+  <dt><strong>geodns</strong></dt>
+  <dd>Role applied to all geographic DNS servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md0</strong></dt>
+  <dd>500GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/md127</strong></dt>
+  <dd>250GB RAID1 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>458GB ext4 on /dev/md0</dd>
+  <dt><strong>/store</strong></dt>
+  <dd>220GB ext4 on /dev/md127</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

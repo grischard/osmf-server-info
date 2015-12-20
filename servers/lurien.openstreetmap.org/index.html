@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>lurien.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="lurienopenstreetmaporg">lurien.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>System</strong></dt>
+  <dd><a href="https://www-947.ibm.com/support/entry/portal/product/system_x/system_x3455/7986">IBM System x3455 7986-CTO</a></dd>
+  <dt><strong>Motherboard</strong></dt>
+  <dd>IBM 7984</dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 2 core <a href="https://en.wikipedia.org/wiki/List_of_AMD_Opteron_microprocessors#Opteron_2200-series_.22Santa_Rosa.22_.2890_nm.29">Dual-Core AMD Opteron(tm) Processor 2216</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>20GB Total</li>
+      <li>10 x 2GB DDR2 DIMM</li>
+      <li>2 x Spare DIMM slot</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Broadcom BCM5785 [HT1000] SATA (Native SATA Mode)</li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 150GB IBM-ESXS GNA146C3ESTT0Z N</li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Broadcom NetXtreme BCM5704 Gigabit Ethernet</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:14:5E:55:D9:FE</li>
+      <li>10.64.1.22</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:14:5E:55:D9:FF</li>
+      <li>193.55.222.229</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>IBM version IBM BIOS Version 1.43-[C0E143AUS-1.43]-</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>lurien</strong></dt>
+  <dd>Master role applied to lurien</dd>
+  <dt><strong>paulla</strong></dt>
+  <dd>Role applied to all servers at PauLLA</dd>
+  <dt><strong>fr</strong></dt>
+  <dd>Role applied to all servers located in France</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>tilecache</strong></dt>
+  <dd>Role applied to all tile cache servers</dd>
+  <dt><strong>geodns</strong></dt>
+  <dd>Role applied to all geographic DNS servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md125</strong></dt>
+  <dd>8GB RAID10 array over 2 disks</dd>
+  <dt><strong>/dev/md126</strong></dt>
+  <dd>8GB RAID10 array over 2 disks</dd>
+  <dt><strong>/dev/md127</strong></dt>
+  <dd>8GB RAID10 array over 2 disks</dd>
+  <dt><strong>/dev/md128</strong></dt>
+  <dd>200GB RAID0 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>8GB ext4 on /dev/md126</dd>
+  <dt><strong>/home</strong></dt>
+  <dd>8GB ext4 on /dev/md127</dd>
+  <dt><strong>/store</strong></dt>
+  <dd>206GB ext4 on /dev/md128</dd>
+  <dt><strong>/tmp</strong></dt>
+  <dd>8GB ext4 on /dev/sda2</dd>
+  <dt><strong>/var</strong></dt>
+  <dd>8GB ext4 on /dev/md125</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

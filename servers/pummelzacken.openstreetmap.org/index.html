@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>pummelzacken.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="pummelzackenopenstreetmaporg">pummelzacken.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd><a href="http://www.supermicro.com.tw/products/motherboard/Xeon/C600/X9DRW-iF.cfm">Supermicro X9DRW</a></dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 6 core <a href="http://ark.intel.com/products/75790">Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>126GB Total</li>
+      <li>8 x 16GB 1600 MHz DDR3 DIMM</li>
+      <li>8 x Spare DIMM slot</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li><a href="http://www.adaptec.com/en-us/products/series/8/">Adaptec Series 8 12G SAS/PCIe 3</a></li>
+      <li>Intel C600/X79 series chipset 6-Port SATA AHCI Controller</li>
+      <li>Intel C602 chipset 4-Port SATA Storage Control Unit</li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 1000GB <a href="http://www.seagate.com/www-content/product-content/constellation-fam/constellation/constellation-2/en-us/docs/constellation2-fips-ds1719-4-1207us.pdf">Seagate ST91000640NS</a></li>
+      <li>2 x 600GB <a href="https://www.hgst.com/sites/default/files/resources/US15K600_DS_final.pdf">HGST HUS156060VLS600</a></li>
+      <li>6 x 400GB <a href="http://www.seagate.com/files/www-content/product-content/ssd-fam/600-pro-ssd/en-us/docs/600-pro-ssd-data-sheet-ds1790-2-1305us.pdf">Seagate ST400FP0021</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel Ethernet Converged Network Adapter X540-T2</li>
+      <li>Intel I350 Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>em1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:E4:58:48</li>
+      <li>10.0.0.20</li>
+    </ul>
+  </dd>
+  <dt><strong>em2</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:E4:58:49</li>
+      <li>128.40.45.204</li>
+    </ul>
+  </dd>
+  <dt><strong>p5p1</strong></dt>
+  <dd>
+    <ul>
+      <li>A0:36:9F:38:CA:40</li>
+    </ul>
+  </dd>
+  <dt><strong>p5p2</strong></dt>
+  <dd>
+    <ul>
+      <li>A0:36:9F:38:CA:42</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version 3.2</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>pummelzacken</strong></dt>
+  <dd>Master role applied to pummelzacken</dd>
+  <dt><strong>ucl-wolfson</strong></dt>
+  <dd>Role applied to all servers at UCL which are in Wolfson House</dd>
+  <dt><strong>ucl</strong></dt>
+  <dd>Role applied to all servers at UCL</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>nominatim-master</strong></dt>
+  <dd>Role applied to the master nominatim server</dd>
+  <dt><strong>nominatim</strong></dt>
+  <dd>Role applied to all nominatim servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md0</strong></dt>
+  <dd>1000GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>600GB RAID array over 2 disks</dd>
+  <dt><strong>/dev/sdb</strong></dt>
+  <dd>1TB RAID10 array over 6 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>917GB ext4 on /dev/md0</dd>
+  <dt><strong>/data</strong></dt>
+  <dd>558GB xfs on /dev/sda1</dd>
+  <dt><strong>/ssd</strong></dt>
+  <dd>1TB xfs on /dev/sdb1</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

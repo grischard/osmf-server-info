@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>katla.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="katlaopenstreetmaporg">katla.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd><a href="http://www.supermicro.com.tw/products/motherboard/xeon/c600/X9DR7-LN4F.cfm">Supermicro X9DR7/E-(J)LN4F</a></dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 8 core <a href="http://ark.intel.com/products/64597">Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>252GB Total</li>
+      <li>16 x 16GB 1600 MHz DDR3 DIMM</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel C600/X79 series chipset 6-Port SATA AHCI Controller</li>
+      <li>Intel C602 chipset 4-Port SATA Storage Control Unit</li>
+      <li><a href="http://www.avagotech.com/products/server-storage/raid-controllers/megaraid-sas-9271-8icc">LSI MegaRAID SAS 9271-8iCC</a></li>
+      <li><a href="http://www.avagotech.com/products/server-storage/raid-controllers/megaraid-sas-9271-8icc">LSI MegaRAID SAS 9271-8iCC</a></li>
+      <li><a href="http://www.avagotech.com/products/server-storage/io-controllers/sas-2308">LSI SAS2308 PCI-Express Fusion-MPT SAS-2</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>25 x 900GB <a href="http://www.seagate.com/www-content/product-content/savvio-fam/savvio-10k/savvio-10k-6/en-us/docs/savvio-10k-6-data-sheet-ds1768-1-1210us.pdf">Seagate ST900MM0026</a></li>
+      <li>2 x 600GB <a href="http://www.seagate.com/www-content/product-content/savvio-fam/savvio-10k/savvio-10k-6/en-us/docs/savvio-10k-6-data-sheet-ds1768-1-1210us.pdf">Seagate ST600MM0026</a></li>
+      <li>2 x 400GB <a href="http://ark.intel.com/products/71915">Intel SSDSC2BA40</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel I350 Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:94:91:00</li>
+      <li>146.179.159.173</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:94:91:01</li>
+    </ul>
+  </dd>
+  <dt><strong>eth2</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:94:91:02</li>
+    </ul>
+  </dd>
+  <dt><strong>eth3</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:94:91:03</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version 3.0a</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 12.04.5 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>katla</strong></dt>
+  <dd>Master role applied to katla</dd>
+  <dt><strong>ic</strong></dt>
+  <dd>Role applied to all servers at Imperial College</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>db-master</strong></dt>
+  <dd>Role applied to all the master database server</dd>
+  <dt><strong>db</strong></dt>
+  <dd>Role applied to all database servers</dd>
+  <dt><strong>db-backup</strong></dt>
+  <dd>Role applied to the server responsible for database backups</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md0</strong></dt>
+  <dd>400GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>6.544 TB RAID1 array over 16 disks</dd>
+  <dt><strong>/dev/sdb</strong></dt>
+  <dd>4.090 TB RAID6 array over 7 disks</dd>
+  <dt><strong>/dev/sde</strong></dt>
+  <dd>571250 MB RAID1 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>297GB ext4 on /dev/sde1</dd>
+  <dt><strong>/store/arrays/fast</strong></dt>
+  <dd>7TB xfs on /dev/sda1</dd>
+  <dt><strong>/store/arrays/slow</strong></dt>
+  <dd>4TB xfs on /dev/sdb1</dd>
+  <dt><strong>/store/arrays/ssd</strong></dt>
+  <dd>367GB ext4 on /dev/md0</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

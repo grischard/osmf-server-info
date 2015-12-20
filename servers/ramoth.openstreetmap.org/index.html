@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ramoth.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="ramothopenstreetmaporg">ramoth.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd><a href="http://www.supermicro.com.tw/Aplus/motherboard/Opteron6000/SR56x0/H8DGU-F.cfm">Supermicro H8DGU</a></dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 6 core <a href="https://en.wikipedia.org/wiki/List_of_AMD_Opteron_microprocessors#Opteron_6200-series_.22Interlagos.22_.2832_nm.29">AMD Opteron(TM) Processor 6238</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>252GB Total</li>
+      <li>16 x 16GB 1600 MHz DDR3 DIMM</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li><a href="http://www.avagotech.com/products/server-storage/raid-controllers/megaraid-sas-9271-8icc">LSI MegaRAID SAS 9271-8iCC</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 600GB <a href="http://ark.intel.com/products/56569">Intel SSDSA2CW600G3</a></li>
+      <li>21 x 600GB <a href="http://www.seagate.com/files/docs/pdf/datasheet/disc/cheetah-15k.7-ds1677.3-1007us.pdf">Seagate ST3600057SS</a></li>
+      <li>2 x 500GB Seagate ST500NM0001</li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82576 Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:4B:05:9A</li>
+      <li>146.179.159.170</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:25:90:80:D3:35</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version 3.5a</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 12.04.5 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>ramoth</strong></dt>
+  <dd>Master role applied to ramoth</dd>
+  <dt><strong>ic</strong></dt>
+  <dd>Role applied to all servers at Imperial College</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>db-slave</strong></dt>
+  <dd>Role applied to all slave database servers</dd>
+  <dt><strong>db</strong></dt>
+  <dd>Role applied to all database servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>465.25 GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/sdb</strong></dt>
+  <dd>7.633 TB RAID6 array over 18 disks</dd>
+  <dt><strong>/dev/sdc</strong></dt>
+  <dd>1.089 TB RAID1 array over 4 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>332GB ext4 on /dev/sda1</dd>
+  <dt><strong>/store/postgresql/openstreetmap</strong></dt>
+  <dd>8TB xfs on /dev/sdb1</dd>
+  <dt><strong>/store/postgresql/system</strong></dt>
+  <dd>1TB xfs on /dev/sdc1</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

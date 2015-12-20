@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>dulcy.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="dulcyopenstreetmaporg">dulcy.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>System</strong></dt>
+  <dd><a href="http://www.supermicro.com.tw/products/system/1U/1028/SYS-1028U-TN10RT_.cfm">Supermicro SYS-1028U-TN10RT+</a></dd>
+  <dt><strong>Motherboard</strong></dt>
+  <dd><a href="http://www.supermicro.com.tw/products/motherboard/Xeon/C600/X10DRU-i_.cfm">Supermicro X10DRU-i+</a></dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 8 core <a href="http://ark.intel.com/products/83356">Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>126GB Total</li>
+      <li>8 x 16GB 2133 MHz <out of="" spec=""> DIMM</out></li>
+      <li>16 x Spare DIMM slot</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel C610/X99 series chipset 6-Port SATA Controller [AHCI mode]</li>
+      <li>Intel C610/X99 series chipset sSATA Controller [AHCI mode]</li>
+      <li>Intel DC P3600 SSD [2.5” SFF]</li>
+      <li>Intel DC P3600 SSD [2.5” SFF]</li>
+      <li><a href="http://www.avagotech.com/products/server-storage/raid-on-chip/sas-3108">LSI MegaRAID SAS-3 3108 [Invader]</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 2TB <a href="http://ark.intel.com/products/series/81000/Intel-SSD-DC-P3600-Series">Intel DC P3600 SSD [2.5” SFF]</a></li>
+      <li>2 x 300GB <a href="http://www.seagate.com/www-content/product-content/enterprise-performance-savvio-fam/enterprise-performance-15k-hdd/en-us/enterprise-performance-15k-hdd-ds1797-3-1406us.pdf">Seagate ST300MP0005</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel Ethernet Controller 10-Gigabit X540-AT2</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>p18p1</strong></dt>
+  <dd>
+    <ul>
+      <li>0C:C4:7A:66:96:D2</li>
+      <li>193.63.75.109</li>
+      <li>2001:630:12:500:ec4:7aff:fe66:96d2</li>
+    </ul>
+  </dd>
+  <dt><strong>p18p2</strong></dt>
+  <dd>
+    <ul>
+      <li>0C:C4:7A:66:96:D3</li>
+      <li>146.179.159.179</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version 1.1</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>dulcy</strong></dt>
+  <dd>Master role applied to dulcy</dd>
+  <dt><strong>ic</strong></dt>
+  <dd>Role applied to all servers at Imperial College</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md0</strong></dt>
+  <dd>2TB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>278.875 GB RAID1 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>148GB ext4 on /dev/sda2</dd>
+  <dt><strong>/boot/efi</strong></dt>
+  <dd>511MB vfat on /dev/sda1</dd>
+  <dt><strong>/ssd</strong></dt>
+  <dd>2TB xfs on /dev/md0p1</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

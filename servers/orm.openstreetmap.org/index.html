@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>orm.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="ormopenstreetmaporg">orm.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd>Tyan S7010</dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 6 core <a href="http://ark.intel.com/products/47921">Intel(R) Xeon(R) CPU X5660 @ 2.80GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>79GB Total</li>
+      <li>4 x 16GB 1333 MHz Other DIMM</li>
+      <li>4 x 4GB 1333 MHz Other DIMM</li>
+      <li>4 x Spare DIMM slot</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Areca ARC-1680 8 port PCIe/PCI-X to SAS/SATA II RAID Controller</li>
+      <li>Intel 82801JI (ICH10 Family) SATA AHCI Controller</li>
+      <li><a href="http://www.avagotech.com/products/server-storage/io-controllers/sas-2308">LSI SAS2308 PCI-Express Fusion-MPT SAS-2</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 2TB <a href="http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-701338.pdf">Western Digital WD2003FYYS</a></li>
+      <li>1 x 1TB Samsung SSD 850</li>
+      <li>1 x 600GB <a href="http://www.seagate.com/files/docs/pdf/datasheet/disc/cheetah-15k.7-ds1677.3-1007us.pdf">Seagate ST3600057SS</a></li>
+      <li>5 x 450GB <a href="http://www.seagate.com/files/docs/pdf/datasheet/disc/cheetah-15k.7-ds1677.3-1007us.pdf">Seagate ST3450857SS</a></li>
+      <li>2 x 300GB Western Digital WD3000HLFS</li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82574L Gigabit Network Connection</li>
+      <li>Intel 82574L Gigabit Network Connection</li>
+    </ul>
+  </dd>
+  <dt><strong>Out-of-band Management</strong></dt>
+  <dd><a href="http://tyan.com/manuals/AST2050_Manual_v101.pdf">ASPEED AST2050</a></dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C5:2A:8C</li>
+      <li>193.63.75.98</li>
+      <li>2001:630:12:500:2e0:81ff:fec5:2a8c</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C5:2A:8D</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version ‘V3.03        ‘</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>orm</strong></dt>
+  <dd>Master role applied to orm</dd>
+  <dt><strong>ic</strong></dt>
+  <dd>Role applied to all servers at Imperial College</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>tyan-s7010</strong></dt>
+  <dd>Role applied to machines using the Tyan S710 motherboard</dd>
+  <dt><strong>tile</strong></dt>
+  <dd>Role applied to all tile servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/sda</strong></dt>
+  <dd>2TB RAID1+0 array over 2 disks</dd>
+  <dt><strong>/dev/sdb</strong></dt>
+  <dd>600GB RAID0 array over 2 disks</dd>
+  <dt><strong>/dev/sdc</strong></dt>
+  <dd>2TB RAID5 array over 5 disks</dd>
+</dl>
+
+<h2 id="logical-volumes">Logical Volumes</h2>
+
+<dl>
+  <dt><strong>/dev/ubuntu/root</strong></dt>
+  <dd>2TB on /dev/sda3</dd>
+  <dt><strong>/dev/ubuntu/swap_1</strong></dt>
+  <dd>75GB on /dev/sda3</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>2TB ext4 on /dev/mapper/ubuntu-root</dd>
+  <dt><strong>/boot</strong></dt>
+  <dd>229MB ext2 on /dev/sda2</dd>
+  <dt><strong>/store/database</strong></dt>
+  <dd>939GB ext4 on /dev/sdd1</dd>
+  <dt><strong>/store/tiles/default-high</strong></dt>
+  <dd>559GB xfs on /dev/sdb1</dd>
+  <dt><strong>/store/tiles/default-low</strong></dt>
+  <dd>2TB ext4 on /dev/sdc1</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

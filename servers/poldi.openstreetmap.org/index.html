@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>poldi.openstreetmap.org</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/osmf-server-info/css/main.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/osmf-server-info/">OSMF Server Info</a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/osmf-server-info/about/">About</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 id="poldiopenstreetmaporg">poldi.openstreetmap.org</h1>
+
+<h2 id="hardware">Hardware</h2>
+
+<dl>
+  <dt><strong>Motherboard</strong></dt>
+  <dd>Tyan S7010</dd>
+  <dt><strong>CPU</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 6 core <a href="http://ark.intel.com/products/47921">Intel(R) Xeon(R) CPU X5660 @ 2.80GHz</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Memory</strong></dt>
+  <dd>
+    <ul>
+      <li>94GB Total</li>
+      <li>4 x 16GB 1333 MHz Other DIMM</li>
+      <li>8 x 4GB 1333 MHz Other DIMM</li>
+    </ul>
+  </dd>
+  <dt><strong>Disk Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82801JI (ICH10 Family) SATA AHCI Controller</li>
+      <li><a href="http://www.avagotech.com/products/server-storage/io-controllers/sas-3008">LSI SAS3008 PCI-Express Fusion-MPT SAS-3</a></li>
+    </ul>
+  </dd>
+  <dt><strong>Disks</strong></dt>
+  <dd>
+    <ul>
+      <li>2 x 2TB <a href="http://www.wdc.com/wdproducts/library/SpecSheet/ENG/2879-701338.pdf">Western Digital WD2003FYYS</a></li>
+      <li>2 x 500GB Samsung SSD 840</li>
+      <li>2 x 300GB Western Digital WD3000HLFS</li>
+      <li>2 x 250GB Crucial CTFDDAC256M</li>
+    </ul>
+  </dd>
+  <dt><strong>Network Controllers</strong></dt>
+  <dd>
+    <ul>
+      <li>Intel 82574L Gigabit Network Connection</li>
+      <li>Intel 82574L Gigabit Network Connection</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="network">Network</h2>
+
+<dl>
+  <dt><strong>eth0</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C5:33:3F</li>
+      <li>146.179.159.164</li>
+    </ul>
+  </dd>
+  <dt><strong>eth1</strong></dt>
+  <dd>
+    <ul>
+      <li>00:E0:81:C5:33:3E</li>
+      <li>193.63.75.101</li>
+      <li>2001:630:12:500:2e0:81ff:fec5:333e</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="software">Software</h2>
+
+<dl>
+  <dt><strong>BIOS</strong></dt>
+  <dd>American Megatrends Inc. version ‘V3.03        ‘</dd>
+  <dt><strong>Operating System</strong></dt>
+  <dd>Ubuntu 14.04.3 LTS</dd>
+</dl>
+
+<h2 id="roles">Roles</h2>
+
+<dl>
+  <dt><strong>poldi</strong></dt>
+  <dd>Master role applied to poldi</dd>
+  <dt><strong>ic</strong></dt>
+  <dd>Role applied to all servers at Imperial College</dd>
+  <dt><strong>gb</strong></dt>
+  <dd>Role applied to all servers located in the UK</dd>
+  <dt><strong>base</strong></dt>
+  <dd>Base role applied to all servers</dd>
+  <dt><strong>tyan-s7010</strong></dt>
+  <dd>Role applied to machines using the Tyan S710 motherboard</dd>
+  <dt><strong>nominatim-slave</strong></dt>
+  <dd>Role applied to all slave nominatim servers</dd>
+  <dt><strong>nominatim</strong></dt>
+  <dd>Role applied to all nominatim servers</dd>
+</dl>
+
+<h2 id="disk-arrays">Disk Arrays</h2>
+
+<dl>
+  <dt><strong>/dev/md0</strong></dt>
+  <dd>500GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/md128</strong></dt>
+  <dd>2TB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/md129</strong></dt>
+  <dd>250GB RAID1 array over 2 disks</dd>
+  <dt><strong>/dev/md130</strong></dt>
+  <dd>300GB RAID1 array over 2 disks</dd>
+</dl>
+
+<h2 id="filesystems">Filesystems</h2>
+
+<dl>
+  <dt><strong>/</strong></dt>
+  <dd>2TB ext4 on /dev/md128</dd>
+  <dt><strong>/data</strong></dt>
+  <dd>275GB ext4 on /dev/md130</dd>
+  <dt><strong>/ssd</strong></dt>
+  <dd>469GB ext4 on /dev/md0</dd>
+  <dt><strong>/ssd-old</strong></dt>
+  <dd>234GB ext4 on /dev/md129</dd>
+</dl>
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
